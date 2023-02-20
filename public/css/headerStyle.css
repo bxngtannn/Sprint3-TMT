@@ -34,7 +34,6 @@ body{
     visibility: hidden;
     position: absolute;
     top: 42px;
-    width: 10vw;
     z-index: 1;
     opacity: 0;
     transition: visibility 0.2s, opacity 0.5s linear;
@@ -57,15 +56,14 @@ span.categoriadd:hover svg{
 span.categoriadd:hover::after{
     position: absolute;
     top: 10px;
-    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1EENgDAQRNFfBzgBCeAARyABJ0gACeAECWRvwIHubNKEAz0387rTtInCKxXO5weyDX+qohGYgCN77MsG7wQWPgAb0CmIF6iAFahVxAvY0CFEAUKICshIFFiABtiB9u3SVcDuwR1u4yqAHK4AoXAF6IHZ0/nzlSsVGWKPrchXoXw/t73KBCHkB7K1Fa/oBCp+IhnuHeH5AAAAAElFTkSuQmCC");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);'%3E%3Cpath d='M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .minidd-content{
     visibility: hidden;
     position: absolute;
-    top: 2px;
-    margin-left: 175px;
-    width: 10vw;
+    top: 0px;
+    margin-left: 147px;
     z-index: 1;
     opacity: 0;
     transition: visibility 0.2s, opacity 0.5s linear;
@@ -76,7 +74,7 @@ span.categoriadd:hover::after{
     color: black;
     background-color: rgba(115, 132, 150, 0.626);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 10vw;
+    width: 108px;
     margin: 5px;
     border: 1px solid;
     border-radius: 10px;
@@ -102,12 +100,18 @@ span.categoriadd:hover::after{
 
 
 .content{
-    top: 0;
-    display: flex;
     flex-direction: row;
     flex: 1;
-    justify-content: space-evenly;
     align-items: center;
+}
+
+.izqHead{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.izqHead > div{
+    margin: 50px;
 }
 
 .derHead{
@@ -119,7 +123,39 @@ span.categoriadd:hover::after{
     margin: 30px;
 }
 
-
 .contenido{
         height: 200vh;
+}
+
+
+@media (max-width: 660px) {
+    .header{
+        top: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        font-size: 12px;
+    }
+    .header svg{
+        width: 20px;
+        height: 20px;
+    }
+    span.categoriadd:hover::after{
+        top: 8px;
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);'%3E%3Cpath d='M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z'%3E%3C/path%3E%3C/svg%3E");
+    }
+    .dd-content .minidd span{
+        width: 75px;
+    }
+    .minidd-content{
+        margin-left: 112px;
+    }
+    span.flecha-despl{
+        top: 20px;
+    }
+    .flecha-despl img{
+        height: 20px;
+        width: 20px;
+    }
+
 }

@@ -8,8 +8,17 @@
 }
 
 body{
+    background-image: url(../images/architecture-building-design-house-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     margin: 0;
-    background-color: #f1f7ff;
+}
+
+.home{
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.368);
 }
 
 a{
@@ -23,11 +32,10 @@ a:hover{
     color: #000000;
 }
 
-
-
 .encabezado{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 40px;
     font-size: 30px;
 }
@@ -35,7 +43,6 @@ a:hover{
 .categorias{
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .categorias-master{
@@ -47,7 +54,13 @@ a:hover{
 .categorias-master img {
     width: 450px;
     margin: 40px;
+    border-radius: 5px;
     border: 1px solid black;
+    transition: width 0.5s;
+}
+
+.categoriaImg img:hover {
+    width: 470px;
 }
 
 .subcategorias{
@@ -60,8 +73,11 @@ a:hover{
 .subcategorias img{
     width: 220px;
     margin: 15px 25px;
+    border-radius: 5px;
     border: 1px solid black;
+    transition: width 0.5s;
 }
+
 
 .subC{
     display: flex;
@@ -74,7 +90,7 @@ a:hover{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.263);
     height: 420px;
     margin: 30px;
     border: 1px solid black;
