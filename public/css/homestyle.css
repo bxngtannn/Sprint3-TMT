@@ -1,0 +1,274 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: "Nunito";
+}
+
+body{
+    margin: 0;
+    background-color: #f1f7ff;
+}
+
+a{
+    display:contents;
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.encabezado{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.categorias-master{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.categorias-master img {
+    width: 450px;
+    margin: 40px;
+    border: 1px solid black;
+}
+
+.subcategorias{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.subcategorias img{
+    width: 220px;
+    margin: 15px 25px;
+    border: 1px solid black;
+}
+
+.subC{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produc-recom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    height: 420px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 34px;
+}
+
+.flecha{
+    margin: 10px;
+}
+
+.product{
+    position: relative;
+    width: 300px;
+    height: 373px;
+    background-color: #dcdcdc;
+    margin: 10px 0px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.arriba{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+}
+
+.img-prod img{
+    height: 220px;
+    width: 220px;
+    margin-top: 6px;
+}
+
+.abajo{
+    background-color: #ffffff;
+    margin: 4px;
+}
+
+.descrip-prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descrip-prod p{
+    margin: 0;
+}
+
+.descrip-prod .texto{
+    font-size: 23px;
+}
+
+.descrip-prod .cuotas{
+    font-size: 10px;
+}
+
+.descrip-prod .disc{
+    position: absolute;
+    top: 200px;
+    right: 12px;
+    font-size: 20px;
+    color: #1cb521;
+}
+
+.abajo .bot-carrito{
+    display: flex;
+    justify-content: center;
+}
+
+.abajo .bot-carrito .boton{
+    border-radius: 10px;
+    background-color: #b4c4db;
+    padding: 5px;
+    margin: 8px;
+    font-size: 15px;
+    transition: background-color 500ms;
+}
+
+.abajo .bot-carrito .boton:hover{
+    background-color: #8998ab;
+}
+
+.sponsors{
+    width: 100%;
+    overflow: hidden;
+}
+
+.sponsors img{
+    animation: sponsorsMov 30s infinite;
+}
+
+@keyframes sponsorsMov{
+    50% { transform: translateX(-1350px);}
+}
+
+@media (max-width: 1024px) {
+    .categorias-master{
+        flex-direction: column;
+        align-items: center;
+    }
+    .subC{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .categorias-master img{
+        width: 420px;
+        margin: 20px
+    }
+}
+
+@media (max-width:769px) {
+    .produc-recom{
+        height: 307px;
+    }
+    .produc-recom .flecha img{
+        width: 30px;
+    }
+    .product{
+        width: 182px;
+        height: 257px;
+    }
+    .img-prod img{
+        height: 126px;
+        width: 126px;
+    }
+    .descrip-prod .texto{
+        font-size: 17px;
+    }
+    .descrip-prod .cuotas{
+        font-size: 10px;
+    }
+    .descrip-prod .disc{
+        top: 4px;
+        right: 7px;
+        font-size: 15px;
+    }
+    .abajo .bot-carrito .boton{
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 560px) {
+    .titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+    .categorias-master img{
+        width: 250px;
+        margin: 20px;
+    }
+    .subcategorias img {
+        width: 133px;
+        margin: 9px 27px;
+    }
+    .sponsors img{
+        height: 80px;
+        animation: sponsorsMov2 30s infinite;
+    }
+    @keyframes sponsorsMov2{
+        50% { transform: translateX(-1070px);}
+    }
+    .produc-recom{
+        height: 231px;
+        margin: 5px;
+    }
+    .produc-recom .flecha{
+        margin: -5px;
+    }
+    .produc-recom .flecha img{
+        width: 19px ;
+    }
+    .product{
+        width: 124px;
+        height: 204px;
+    }
+    .img-prod img{
+        height: 100px;
+        width: 100px;
+    }
+    .descrip-prod .texto{
+        font-size: 10px;
+    }
+    .descrip-prod .cuotas{
+        font-size: 8px;
+    }
+    .descrip-prod .disc{
+        top: 4px;
+        right: 7px;
+        font-size: 13px;
+    }
+    .abajo .bot-carrito .boton{
+        padding: 6px;
+        font-size: 10px;
+    }
+}

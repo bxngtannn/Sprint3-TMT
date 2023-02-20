@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: 'Nunito';
+}
+
+.header{
+    position: sticky;
+    top: -100px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(115,132,150);
+    background: linear-gradient(218deg, rgba(115,132,150,1) 14%, rgba(180,196,219,1) 94%);
+    width: 100%;
+}
+
+
+.header .contentheader {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-around;
+    position: sticky;
+}
+
+
+.dd-content{
+    visibility: hidden;
+    position: absolute;
+    top: 42px;
+    width: 10vw;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.5s linear;
+}
+
+span.flecha-despl {
+    position: absolute;
+    top: 17px;
+}
+
+span.categoriadd svg{
+    position: absolute;
+    top: 10px;
+}
+
+span.categoriadd:hover svg{
+    visibility: hidden;
+}
+
+span.categoriadd:hover::after{
+    position: absolute;
+    top: 10px;
+    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJVJREFUSEvt1EENgDAQRNFfBzgBCeAARyABJ0gACeAECWRvwIHubNKEAz0387rTtInCKxXO5weyDX+qohGYgCN77MsG7wQWPgAb0CmIF6iAFahVxAvY0CFEAUKICshIFFiABtiB9u3SVcDuwR1u4yqAHK4AoXAF6IHZ0/nzlSsVGWKPrchXoXw/t73KBCHkB7K1Fa/oBCp+IhnuHeH5AAAAAElFTkSuQmCC");
+}
+
+.minidd-content{
+    visibility: hidden;
+    position: absolute;
+    top: 2px;
+    margin-left: 175px;
+    width: 10vw;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.5s linear;
+}
+
+.dd-content .minidd span{
+    position: relative;
+    color: black;
+    background-color: rgba(115, 132, 150, 0.626);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 10vw;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.Alldd-content a{
+    text-decoration: none;
+}
+
+
+.dropdown:hover .dd-content{
+    visibility: visible;
+    opacity: 1;
+}
+
+.minidd:hover .minidd-content{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.content{
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.derHead{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.derHead div{
+    margin: 30px;
+}
+
+
+.contenido{
+        height: 200vh;
+}
