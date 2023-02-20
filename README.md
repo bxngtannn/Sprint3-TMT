@@ -1,4 +1,4 @@
-3TM es un E-Commerce sobre Muebles para el hogar y electrodomésticos en donde podremos encontras los productos que siempre soñamos
+TMT es un E-Commerce sobre Muebles para el hogar y electrodomésticos en donde podremos encontras los productos que siempre soñamos.
 
 Refencias: 1.Detalle de productos: https://www.asus.com/latin/motherboards-components/graphics-cards/dual/dual-rx6500xt-o4g/ Se eligio este sitio por como detalla los productos. Buena descripcion y imagenes.
 
@@ -11,8 +11,6 @@ Refencias: 1.Detalle de productos: https://www.asus.com/latin/motherboards-compo
 5.Publicidad: http://compragamer.com La publicidad de compra gamer esta bien hecho y queriamos implementar lo mismo.
 
 Equipo:
-
-Hola soy Tobias Castro parte del equipo 3TM, estudiante universitario para ser Ingeniero Electromécanico y en el grupo soy el encargado de realizar las reuniones y investigaciones de algunas herramientas de utilidad para nuestro ambito laboral.
 
 Hola mi nombre es Tomas Miranda integrante del equipo 3TM, soy estudiante en la UNTDF (universidad de tierra del fuego en Ushuaia) cursando para ser licenciado en sistemas, tengo un gran interese por la programación porque tiene varios caminos por donde lanzarte y los que mas me interesaron son el desarrollo web y de videojuegos.
 
