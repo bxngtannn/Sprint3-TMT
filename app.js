@@ -14,6 +14,8 @@ app.set('views',path.join('views'))
 
 app.use(express.static('public'));
 
+const indexRouter = require('./routes/index')
+
 app.get('/', indexRouter);
 
 
