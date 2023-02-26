@@ -28,7 +28,8 @@ const mainController = {
         res.render("home", { });
     },
     producto: (req, res) => {
-        res.render("productDetail", {  });
+        let producto = listadoProductos.find(producto => producto.id == req.params.productoId);
+        res.render("productDetail", { producto : producto });
     },
     cart: (req, res) => {
         res.render("productCart", {  });
@@ -39,11 +40,12 @@ const mainController = {
     register: (req, res) => {
         res.render("register", {  });
     }
-    detalle: (req, res) => {
-    let plato = listaPlatos.find(plato => plato.id == req.params.menuId);
-    console.log(plato)
-    res.render("productDetail", { saludo });
-    },
+    // detalle: (req, res) => {
+    // let productofinal = listadoProductos.find(producto => producto.id == req.params.productoId);
+    // console.log(productofinal)
+    // console.log(productofinal);
+    // res.render("productDetail", { productofinal });
+    // },
 };
 
 module.exports = mainController;

@@ -15,15 +15,15 @@
             <div class="infoproducto">
                 <div class="izquierda">
                     <div class="titulo marginbottom">
-                        <h1><% producto.titulo %></h1>
+                        <h1><%= producto.titulo %></h1>
 
                     </div>
                     <div class="descripcion marginbottom">
 
-                        <p><% producto.descripcion %></p>
+                        <p><%= producto.descripcion %></p>
                     </div>
                     <div class="precio marginbottom">
-                                            <h2><% producto.precio %></h2>
+                                            <h2><%= producto.precio %></h2>
                     </div>
                     <a href="/productCart"><span class="botom">
                         Agregar al carrito
@@ -31,7 +31,7 @@
                     </span></a> <a href="/productCart"></a>
                 </div>
                 <div class="derecha">
-                    <img src="/images/pantallaCurva.jpg" />
+                    <img src="/images/<%= producto.img %>" />
                 </div>
             </div>
             <div class="slider">
