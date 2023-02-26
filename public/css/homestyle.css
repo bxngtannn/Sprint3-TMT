@@ -8,6 +8,7 @@
 }
 
 body{
+    position: relative;
     background-image: url(../images/architecture-building-design-house-wallpaper-preview.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
