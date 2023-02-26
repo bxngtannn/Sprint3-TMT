@@ -19,11 +19,11 @@
           <div class="tarjeta">
             <div class="tarjeta-izquierda">
               <div class="imagenProducto">
-                <img src="images/micro.jpg" />
+                <img src="images/<%= productos[0].img %>" />
               </div>
               <div class="detalles">
-                <p>Microondas</p>
-                <p class="precio">$6000</p>
+                <p><%= productos[0].titulo %></p>
+                <p class="precio"><%= productos[0].precio %></p>
                 <button type="reset">Eliminar</button>
               </div>
             </div>
@@ -36,11 +36,11 @@
           <div class="tarjeta">
             <div class="tarjeta-izquierda">
               <div class="imagenProducto">
-                <img src="images/mesita.jpg" />
+                <img src="images/<%= productos[1].img %>" />
               </div>
               <div class="detalles">
-                <p>Mesa</p>
-                <p class="precio">$2000</p>
+                <p><%= productos[1].titulo %></p>
+                <p class="precio"><%= productos[1].precio %></p>
                 <button type="reset">Eliminar</button>
               </div>
             </div>
@@ -53,28 +53,11 @@
           <div class="tarjeta">
             <div class="tarjeta-izquierda">
               <div class="imagenProducto">
-                <img src="images/sillon.jpg" />
+                <img src="images/<%= productos[2].img %>" />
               </div>
               <div class="detalles">
-                <p>Sillon</p>
-                <p class="precio">$9000</p>
-                <button type="reset">Eliminar</button>
-              </div>
-            </div>
-            <div class="tarjeta-derecha">
-              <span>-</span>
-              <div class="cantida-producto">1</div>
-              <span>+</span>
-            </div>
-          </div>
-          <div class="tarjeta">
-            <div class="tarjeta-izquierda">
-              <div class="imagenProducto">
-                <img src="images/sillon2.jpg" />
-              </div>
-              <div class="detalles">
-                <p>Sillon pequeño</p>
-                <p class="precio">$1000</p>
+                <p><%= productos[2].titulo %></p>
+                <p class="precio"><%= productos[2].precio %></p>
                 <button type="reset">Eliminar</button>
               </div>
             </div>
