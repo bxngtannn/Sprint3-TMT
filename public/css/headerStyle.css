@@ -28,8 +28,12 @@ body{
     width: 100%;
     height: 60px;
     justify-content: space-around;
+    align-items: center;
 }
 
+.dropdown{
+    position: relative;
+}
 
 .dd-content{
     visibility: hidden;
@@ -73,9 +77,9 @@ span.categoriadd:hover::after{
 .dd-content .minidd span{
     position: relative;
     color: black;
-    background-color: rgba(115, 132, 150, 0.626);
+    background-color: rgba(115, 132, 150, 0.911);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 143px;
+    width: 110px;
     margin: 5px;
     border: 1px solid;
     border-radius: 10px;
