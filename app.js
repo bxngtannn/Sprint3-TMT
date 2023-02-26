@@ -16,7 +16,11 @@ app.use(express.static('public'));
 
 const indexRouter = require('./routes/index')
 
-app.get('/', indexRouter);
+const usersRouter = require('./routes/users')
+
+app.use('/', indexRouter);
+app.use('/', usersRouter);
+
 
 
 app.listen(port, () => console.log(`Servidor funcionando en el puerto ${port}!`));
