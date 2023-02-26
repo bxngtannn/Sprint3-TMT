@@ -16,7 +16,7 @@ Hola mi nombre es Tomas Miranda integrante del equipo 3TM, soy estudiante en la 
 
 Hola me llamo Thiago Pizarro , soy Tecnologo y me facina todo lo relacionado a la informatica y como esta ayuda en el dia a dia de las personas
 
-Mi nombre es Martina Solis, soy parte del equipo de 3TM, estoy por empezar a cursar la carrera de Licenciatura en Sistemas en la Universidad de Tierra del Fuego. Como parte de 3TM estoy haciendo la parte de experiencia de usuario y diseño, todo lo que se vea lindo es gracias a mi, jajaja(es broma).
+Mi nombre es Martina Solis, soy parte del equipo de TMT, estoy por empezar a cursar la carrera de Licenciatura en Sistemas en la Universidad de Tierra del Fuego. Como parte de TMT me encargo de experiencia de usuario y diseño, todo lo que se vea lindo es gracias a mi, jajaja(es broma).
 
 
 TRELLO : https://trello.com/b/ZP3M1bdp/tareas-a-realizar
