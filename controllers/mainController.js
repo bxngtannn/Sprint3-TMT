@@ -32,7 +32,8 @@ const mainController = {
         res.render("productDetail", { producto : producto });
     },
     cart: (req, res) => {
-        res.render("productCart", {  });
+        let productos = listadoProductos;
+        res.render("productCart", { productos : productos });
     },
     login: (req, res) => {
         res.render("login", {  });
@@ -40,12 +41,6 @@ const mainController = {
     register: (req, res) => {
         res.render("register", {  });
     }
-    // detalle: (req, res) => {
-    // let productofinal = listadoProductos.find(producto => producto.id == req.params.productoId);
-    // console.log(productofinal)
-    // console.log(productofinal);
-    // res.render("productDetail", { productofinal });
-    // },
 };
 
 module.exports = mainController;
