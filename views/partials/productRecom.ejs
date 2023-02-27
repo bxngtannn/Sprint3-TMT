@@ -17,16 +17,16 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAQpJREFUaEPt2FEOwjAMA9DspMDN4CbcjCnSkPrBaLvYjiplX3x0wy8u6sRmi1/b4vmtANkNVgPVQHACtYWCAwzfXg1MjvBpZh8ze0zed7pc2YCHvx1J/DMEoQK04b/ThCAUgF/hYQg24F94R7zM7B75PTAB9PAOZwEk4VkAWXgGQBoeDZCHRwJSwqMAaeERgNTwUUB6eDYA8q7TO6WjB1mvBToiCvABpSIQgFQECpCGQAJSEGiAHMEASBEsgAzBBEgQbEAP4X+t+Dly+VIAzhDh8NF3odmptSc2JLwa4N/3PrZMaNu0k1Ntodm2htcXYHhUpIXVAGmww4+tBoZHRVpYDZAGO/zY5RvYAQgIODGcFQF/AAAAAElFTkSuQmCC"/>
             </div>
 
-            <% productos.forEach(productos => { %>
-                <a href="/producto/1"><div class="product">
+            <% productos.forEach(producto => { %>
+                <a href="/producto/<%= producto.id %>"><div class="product">
                 <div class="img-prod arriba">
-                    <img src="/images/<%= productos.img %>" alt="Microondas 1">
+                    <img src="/images/<%= producto.img %>" alt="Microondas 1">
                 </div>
                 <div class="abajo">
                     <div class="descrip-prod">
-                        <p class="nombre texto"><%=productos.titulo%></p>
+                        <p class="nombre texto"><%=producto.titulo%></p>
                         <p class="cuotas">6 CUOTAS SIN INTERÉS</p>
-                        <p class="precio texto"><%=productos.precio %></p>
+                        <p class="precio texto">$<%=producto.precio %></p>
                         <div class="disc">
                             <p>80% OFF</p>
                         </div>
