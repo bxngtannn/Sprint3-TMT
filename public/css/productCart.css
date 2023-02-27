@@ -2,6 +2,8 @@ body{
   box-sizing: border-box;
 }
 
+
+
 .contenedor-cart{
   display: flex;
   flex-direction: column;

@@ -1,0 +1,14 @@
+.arriba{
+    display: flex;
+    flex-direction: row;
+}
+
+.productos, .contacto, .redes{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+}

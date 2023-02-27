@@ -21,6 +21,6 @@ const usersRouter = require('./routes/users')
 app.use('/', indexRouter);
 app.use('/', usersRouter);
 
-
+app.get('/footer', (req, res) => { res.render('./partials/footer')})
 
 app.listen(port, () => console.log(`Servidor funcionando en el puerto ${port}!`));
