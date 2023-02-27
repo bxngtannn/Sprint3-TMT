@@ -25,7 +25,8 @@ const listadoProductos = [
 
 const mainController = {
     home: (req, res) => {
-        res.render("home", { });
+        let productos = listadoProductos;
+        res.render("home", { productos : productos  });
     },
     producto: (req, res) => {
         let producto = listadoProductos.find(producto => producto.id == req.params.productoId);
@@ -40,6 +41,10 @@ const mainController = {
     },
     register: (req, res) => {
         res.render("register", {  });
+    },
+    productRecom: (req, res) => {
+        let productos = listadoProductos;
+        res.render("productCart", { productos : productos });
     }
 };
 
