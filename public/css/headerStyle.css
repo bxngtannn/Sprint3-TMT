@@ -151,10 +151,6 @@ span.categoriadd:hover::after{
     margin: 30px;
 }
 
-.contenido{
-        height: 200vh;
-}
-
 
 @media (max-width: 660px) {
     .header{
