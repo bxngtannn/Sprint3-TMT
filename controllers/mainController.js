@@ -46,6 +46,10 @@ const mainController = {
     productRecom: (req, res) => {
         let productos = listadoProductos;
         res.render("productCart", { productos : productos });
+    },
+    producList: (req, res) => {
+        let productos = listadoProductos;
+        res.render("productList", { productos : productos });
     }
 };
 
