@@ -61,7 +61,7 @@ a:hover{
     width: 450px;
     margin: 40px;
     border-radius: 5px;
-    border: 1px solid black;
+    box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.75);
     transition: width 0.5s;
 }
 
@@ -80,7 +80,7 @@ a:hover{
     width: 220px;
     margin: 15px 25px;
     border-radius: 5px;
-    border: 1px solid black;
+    box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.75);
     transition: width 0.5s;
 }
 

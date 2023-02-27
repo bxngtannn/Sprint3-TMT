@@ -21,6 +21,11 @@ body{
     height: 220px;
 }    
 
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+
 .footer .arribaF{
     display: flex;
     flex: 2;
