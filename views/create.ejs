@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/create.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <%- include("./partials/header.ejs") %>
+    <div class="contenedor-create">
+      <div class="formulario-create">
+        <div class="derecha-create">
+          <img src="images/logo2.png" width="200px" height="200px">
+        </div>
+        <div class="izquierda-create">
+          <form class="form-create">
+            <label for="nombreDeProducto">Nombre de producto:</label>
+            <input type="text" id="nombreDeProducto">
+            <label for="descripcion">Descripcion:</label>
+            <textarea id="descripcion"></textarea>
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio">
+            <button>Selecione una imagen</button>
+            <label for="color">Color:</label>
+            <div class="colores">
+              <span id="color"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span>+</span>
+            </div>
+            <button>Agregar producto</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
