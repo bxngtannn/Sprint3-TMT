@@ -1,0 +1,48 @@
+.contenedor-create{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario-create{
+  display: flex;
+  width: 50vw;
+  background-color: blue;
+  justify-content: space-around;
+}
+
+.form-create{
+  display: flex;
+  flex-direction: column;
+}
+
+.derecha-create img{
+  width: 20vw;
+  height: 45vh;
+}
+
+input:focus{
+  outline: none;
+}
+input{
+    border: 0;
+    border-bottom: solid 2px;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+
+.izquierda-create span{
+  margin-right: 10px;
+  text-align: center;
+}
+
+.colores{
+  display: flex;
+}
+.form-create span{
+  border-radius: 50%;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

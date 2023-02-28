@@ -50,6 +50,9 @@ const mainController = {
     producList: (req, res) => {
         let productos = listadoProductos;
         res.render("productList", { productos : productos });
+    },
+    create:(req,res)=>{
+        res.render("create",{})
     }
 };
 
