@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/create.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/create.css">
-  <title>Document</title>
-</head>
-
-<body>
-  <%- include("./partials/header.ejs") %>
+  <body>
+    <%- include("./partials/header.ejs") %>
     <div class="contenedor-create">
+     
       <div class="formulario-create">
-        <div class="derecha-create">
-          <img src="images/logo2.png" width="200px" height="200px">
-        </div>
         <div class="izquierda-create">
-          <form class="form-create">
-            <label for="nombreDeProducto">Nombre de producto:</label>
-            <input type="text" id="nombreDeProducto">
-            <label for="descripcion">Descripcion:</label>
-            <textarea id="descripcion"></textarea>
-            <label for="precio">Precio:</label>
-            <input type="text" id="precio">
-            <button>Selecione una imagen</button>
-            <label for="color">Color:</label>
-            <div class="colores">
-              <span id="color"></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span>+</span>
-            </div>
-            <button>Agregar producto</button>
-          </form>
+          <img src="images/logo2.png" width="200px" height="200px" />
         </div>
+          <form class="derecha-create">
+            <span>Bienvenido al formulario de carga de productos</span>
+            <div class="form-section">
+              <input type="text" placeholder="Nombre del producto"  class="textBox-1" id="nombreDeProducto"/>
+            </div>
+            <div class="form-section">
+              <textarea id="descripcion" placeholder="Descripcion"></textarea>
+            </div>
+            <div class="form-section" id="precio-img">
+              <input type="text" id="precio" placeholder="Precio"/>
+              <button>Selecione una imagen</button>
+            </div>
+            <div class="form-section">
+              <span>Color</span>
+              <select id="color">
+                <option>Rojo</option>
+                <option>Azul</option>
+                <option>Verde</option>
+                <option>Amarillo</option>
+              </select>
+            </div>
+            <div class="form-section">
+              <button class="agregar">Agregar producto</button>
+            </div>
+          </form>
       </div>
     </div>
-</body>
-
+  </body>
 </html>
