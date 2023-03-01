@@ -87,10 +87,14 @@ textarea{
 
 
 .izquierda-create{
-  flex: 1;
+  flex: 2;
   background-color: #a1b4c7;
   border-top-right-radius: 40%;
   border-bottom-right-radius: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
 .izquierda-create span{
@@ -109,7 +113,7 @@ textarea{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 2;
+  flex: 3;
   margin: 15px;
 }
 
@@ -117,6 +121,7 @@ textarea{
   width: 275px;
   height: 30px;
   border: 0;
+  border-bottom: solid 1px;
 }
 
 
@@ -132,9 +137,11 @@ textarea{
   font-size: 20px;
 }
 
+
 .form-section button{
   width: 130px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .form-section{
@@ -153,8 +160,9 @@ textarea{
 }
 
 .form-section .agregarImg{
-  background-color: black;
-  color: white;
+  background-color: #a1b4c7;
+    border-radius: 12px;
+    border: none;
 }
 
 
@@ -199,7 +207,7 @@ select{
 
 .cuadroNegro{
   width: 200vw;
-  height: 120vh;
+  height: 200vh;
   background-color: #000000a8;
   position: absolute;
   z-index: 5;
