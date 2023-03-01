@@ -1,5 +1,6 @@
 .contenedor-create{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
@@ -9,13 +10,15 @@
   display: flex;
   width: 40vw;
   height: 50vh;
-  box-shadow: 3px 1px 16px 1px rgba(0,0,0,0.75)
+  box-shadow: 3px 1px 16px 1px rgba(0,0,0,0.75);
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    top: 50%;
+    left: 30%;
+    display: none;
 }
 
-.form-group-1{
-  padding: 15px 0 0;
-  position: relative;
-}
 
 .form-create{
   display: flex;
@@ -111,9 +114,9 @@ textarea{
 }
 
 .derecha-create .form-section input{
-  width: 50%;
-  border: transparent;
-  border-bottom:solid ;
+  width: 275px;
+  height: 30px;
+  border: 0;
 }
 
 
@@ -134,6 +137,11 @@ textarea{
   cursor: pointer;
 }
 
+.form-section{
+  padding: 15px 0 0;
+  position: relative;
+}
+
 .form-section .agregar{
   background-color:#08d55c;
   height: 45px;
@@ -142,6 +150,11 @@ textarea{
   border: none;
   box-shadow: 3px 1px 16px 1px rgba(0,0,0,0.25)
 
+}
+
+.form-section .agregarImg{
+  background-color: black;
+  color: white;
 }
 
 
@@ -155,4 +168,43 @@ textarea{
   height: 40px;
   cursor: pointer;
 }
+
+select{
+  margin-right: 20px;
+  width: 70px;
+}
+
+.derecha-create .titulo{
+  text-align: center;
+  font-size: 34px;
+}
+
+.botones-form{
+  display: flex;
+  justify-content: space-around;
+}
+
+.botones-form button{
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #B4C5DB;
+  border: 0;
+  margin-right:60px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+
+
+.cuadroNegro{
+  width: 200vw;
+  height: 120vh;
+  background-color: #000000a8;
+  position: absolute;
+  z-index: 5;
+  display: none;
+}
+
+
 
