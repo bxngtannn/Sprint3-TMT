@@ -151,35 +151,52 @@ span.categoriadd:hover::after{
     margin: 30px;
 }
 
+.headerResponsive{
+    display: none;
+}
 
-@media (max-width: 660px) {
+
+@media (max-width: 1050px) {
+    .izqHead > div {
+        margin: 10%;
+    }
+    .derHead > div {
+        margin: 5%;
+    }
+    .search-bar {
+        width: 80%;
+        margin-left: 20%;
+    }
+    .search-bar input{
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
     .header{
-        top: 0px;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        font-size: 12px;
+        display: none;
     }
-    .header svg{
-        width: 20px;
-        height: 20px;
+    .headerResponsive{
+        display: block;
     }
-    span.categoriadd:hover::after{
-        top: 8px;
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);'%3E%3Cpath d='M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z'%3E%3C/path%3E%3C/svg%3E");
+    .menuDesplRes:hover .dropdownRes{
+        position: absolute;
+        z-index: 10;
+        visibility:visible;
+        opacity: 1;
+        background: rgb(115,132,150);
+        background: linear-gradient(218deg, rgba(115,132,150,1) 14%, rgba(180,196,219,1) 94%);
     }
-    .dd-content .minidd span{
-        width: 104px;
+    .menuDesplRes:hover .iconoMenuDespl{
+        visibility: hidden;
     }
-    .minidd-content{
-        margin-left: 112px;
+    .menuDesplRes:hover::before{
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z'%3E%3C/path%3E%3C/svg%3E");
     }
-    span.flecha-despl{
-        top: 20px;
+    .dropdownRes{
+        visibility: hidden;
+        position: absolute;
+        opacity: 0;
+        transition: visibility 0.2s, opacity 0.5s linear;
     }
-    .flecha-despl img{
-        height: 20px;
-        width: 20px;
-    }
-
 }
